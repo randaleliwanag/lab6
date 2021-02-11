@@ -30,14 +30,9 @@ function addProjectDetails(e) {
 
 	$.get(`/project/` + idNumber, callBackFn);
 
-	$("div.details").html('<a href="#" class="thumbnail">' + '<img src="' + result['image'] + '" class="detailsImage">' +
-    '<p>' + result['title'] + '</p>' +
-    '<p><small>' + result['date'] +
-    '</small></p></a>');
+	$("div.details").html('foo');
 }
 
-function callBackFn(result){
+function callBackFn(result) {
 	console.log(result);
 }
-
-
